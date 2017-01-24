@@ -15,7 +15,7 @@ MapWrapper.prototype = {
              content: contentString
            });
     marker.addListener('click', function() {
-              infowindow.open(marker);
+              infowindow.open(marker.map,marker);
             });
 
   },
