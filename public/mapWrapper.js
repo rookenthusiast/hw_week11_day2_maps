@@ -35,5 +35,10 @@ MapWrapper.prototype = {
     marker.addListener('click', function() {
               infowindow.open(map, marker);
             });
+  },
+
+  setCenter:function(){
+    this.googleMap.setCenter({lat: 55.954503, lng: -3.185129})
+
   }
 }
